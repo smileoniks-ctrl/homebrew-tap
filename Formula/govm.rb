@@ -10,7 +10,7 @@ class Govm < Formula
 
   on_macos do
     url "https://github.com/smileoniks-ctrl/govm/releases/download/v0.1.3/govm_0.1.3_Darwin_all.tar.gz"
-    sha256 "b20b48c30c1d8d7ae8e56e23bb5813ca78bb5c0b5acb0012a664038aec6470e4"
+    sha256 "86e7374322508569f9b14a9393da0c6e8aa38ddb8bb04041fcea3605e898e3d3"
 
     define_method(:install) do
       bin.install "govm"
@@ -20,14 +20,14 @@ class Govm < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/smileoniks-ctrl/govm/releases/download/v0.1.3/govm_0.1.3_Linux_x86_64.tar.gz"
-      sha256 "92f702b837f319c3dfbb313a78fa82ef7c4f54e0bbe157f42fcf256bf2267134"
+      sha256 "69740cdf792f21c5cf0a1374be3dba43c6211f9c0817b75ab036afa5a7c89425"
       define_method(:install) do
         bin.install "govm"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/smileoniks-ctrl/govm/releases/download/v0.1.3/govm_0.1.3_Linux_arm64.tar.gz"
-      sha256 "2be4dd1a5e1480f7994352da5c1878ad02ee0ff31113602a9f0e0219ca38b1de"
+      sha256 "ae13c1bafe6018e7a2e12b139a9667653e5c78f4df0812507b45fcf53c00503e"
       define_method(:install) do
         bin.install "govm"
       end
